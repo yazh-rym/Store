@@ -1,0 +1,137 @@
+PODS:
+  - Alamofire (4.7.3)
+  - AlamofireImage (3.3.1):
+    - Alamofire (~> 4.5)
+  - AWSCognito (2.6.24):
+    - AWSCore (= 2.6.24)
+  - AWSCore (2.6.24)
+  - AWSS3 (2.6.24):
+    - AWSCore (= 2.6.24)
+  - Crashlytics (3.10.5):
+    - Fabric (~> 1.7.9)
+  - DropDown (2.3.2)
+  - EPSignature (1.0.3)
+  - Fabric (1.7.9)
+  - ImageSlideshow (1.6.1):
+    - ImageSlideshow/Core (= 1.6.1)
+  - ImageSlideshow/Alamofire (1.6.1):
+    - AlamofireImage (~> 3.0)
+    - ImageSlideshow/Core
+  - ImageSlideshow/Core (1.6.1)
+  - ImageSlideshow/Kingfisher (1.6.1):
+    - ImageSlideshow/Core
+    - Kingfisher (> 3.0)
+  - Kingfisher (4.8.0)
+  - Material (2.10.2):
+    - Material/Core (= 2.10.2)
+  - Material/Core (2.10.2)
+  - NHRangeSlider (0.2)
+  - NVActivityIndicatorView (4.3.0):
+    - NVActivityIndicatorView/Presenter (= 4.3.0)
+  - NVActivityIndicatorView/Presenter (4.3.0)
+  - PhoneNumberKit (1.4.0):
+    - PhoneNumberKit/PhoneNumberKitCore (= 1.4.0)
+    - PhoneNumberKit/UIKit (= 1.4.0)
+  - PhoneNumberKit/PhoneNumberKitCore (1.4.0)
+  - PhoneNumberKit/UIKit (1.4.0):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - Realm (3.7.4):
+    - Realm/Headers (= 3.7.4)
+  - Realm/Headers (3.7.4)
+  - RealmSwift (3.7.4):
+    - Realm (= 3.7.4)
+  - SearchTextField (1.2.1)
+  - SwiftyBeaver (1.6.0)
+  - SwiftyGif (4.1.0)
+  - SwiftyJSON (4.1.0)
+  - TagListView (1.2.0)
+  - UICircularProgressRing (3.0.0)
+  - Vivid (0.9)
+  - YUCIHighPassSkinSmoothing (1.4):
+    - Vivid
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - AlamofireImage (~> 3.1)
+  - AWSCognito
+  - AWSCore
+  - AWSS3
+  - Crashlytics
+  - DropDown
+  - EPSignature
+  - Fabric
+  - ImageSlideshow (~> 1.3)
+  - ImageSlideshow/Alamofire
+  - ImageSlideshow/Kingfisher
+  - Kingfisher (~> 4.0)
+  - Material (= 2.10.2)
+  - NHRangeSlider (~> 0.2)
+  - NVActivityIndicatorView
+  - PhoneNumberKit (~> 1.2)
+  - RealmSwift
+  - SearchTextField
+  - SwiftyBeaver
+  - SwiftyGif
+  - SwiftyJSON
+  - TagListView (= 1.2)
+  - UICircularProgressRing
+  - YUCIHighPassSkinSmoothing
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - AlamofireImage
+    - AWSCognito
+    - AWSCore
+    - AWSS3
+    - Crashlytics
+    - DropDown
+    - EPSignature
+    - Fabric
+    - ImageSlideshow
+    - Kingfisher
+    - Material
+    - NHRangeSlider
+    - NVActivityIndicatorView
+    - PhoneNumberKit
+    - Realm
+    - RealmSwift
+    - SearchTextField
+    - SwiftyBeaver
+    - SwiftyGif
+    - SwiftyJSON
+    - TagListView
+    - UICircularProgressRing
+    - Vivid
+    - YUCIHighPassSkinSmoothing
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
+  AWSCognito: 674d7b5e4d2a4cb307f9c42d32e9cd85ec2a2b8a
+  AWSCore: 43358e747642c26c249c2e3debde690e226656bd
+  AWSS3: 1ad08124a768351bb8e1cc3cc6449199a1fe1394
+  Crashlytics: 7f2e38d302d9da96475b3d64d86fb29e31a542b7
+  DropDown: 7f87abecc28f9b4edad810fe1211c5c018c257e5
+  EPSignature: 6c5c3ca674650a11b16c3cd5641a830bad4793f8
+  Fabric: a2917d3895e4c1569b9c3170de7320ea1b1e6661
+  ImageSlideshow: f0f33e1a20668e83d77f5fb7729e4ae4437c0759
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
+  Material: 8265a77332acfb7872a7fd0f4f2023f080d25d1f
+  NHRangeSlider: 2ef13d34bd7d48fcdedcde71c018c093992add7d
+  NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
+  PhoneNumberKit: a739c359d05701e2e9745654f53e7c64379c2516
+  Realm: a469bb59e33f9926102ccaea4349822c53b9117e
+  RealmSwift: a45861b21c180f5cf0f122144b9759fa8dde3e9e
+  SearchTextField: 261b0febd49194492f29555fff3c5c0019ca84d2
+  SwiftyBeaver: e45759613e50b522b0e6f53b1f0f14389b45ca34
+  SwiftyGif: d36c6dfb52e2ca1e48fe349d225f50ec4123ec85
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  TagListView: 999e1df50c0f6b9ca927fae705c86a7e3b6ee9ba
+  UICircularProgressRing: 3b472692ffca84060fd444ea5c0b387161067c54
+  Vivid: 0fde7409beac71224deb151dd78f98a5bb860497
+  YUCIHighPassSkinSmoothing: 8418fd1bf605ec22b647c57745b863b352f72097
+
+PODFILE CHECKSUM: 82214b1400e5b0c1f33e279b18f52ab33d10be20
+
+COCOAPODS: 1.5.0

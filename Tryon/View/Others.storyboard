@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Something Went Wrong Controller-->
+        <scene sceneID="CUl-s4-sZa">
+            <objects>
+                <viewController storyboardIdentifier="wentWrong" id="817-7P-HqQ" customClass="SomethingWentWrongController" customModule="Tryon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zcz-Sh-LML"/>
+                        <viewControllerLayoutGuide type="bottom" id="UyD-jC-R3r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7ZS-sv-3lO">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKE-bb-hnN" userLabel="BackButton">
+                                <rect key="frame" x="688" y="40" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="MDR-60-SIk"/>
+                                    <constraint firstAttribute="height" constant="60" id="vJj-dd-sa1"/>
+                                </constraints>
+                                <state key="normal" image="CloseIcon"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closeButtonDidTap:" destination="817-7P-HqQ" eventType="touchUpInside" id="kXj-rF-0qa"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="er5-E2-BdK">
+                                <rect key="frame" x="134" y="180" width="500" height="330"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PN3-XA-1P8">
+                                <rect key="frame" x="134" y="180" width="500" height="330"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SomethingWentWrongImage" translatesAutoresizingMaskIntoConstraints="NO" id="wOo-LJ-XhV">
+                                        <rect key="frame" x="200" y="50" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="cAD-qI-13L"/>
+                                            <constraint firstAttribute="width" constant="100" id="fx7-vB-I9M"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tOO-IZ-nAj">
+                                        <rect key="frame" x="90" y="170" width="320" height="60"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="GY5-jE-Flj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRY AGAIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gub-bn-Jga">
+                                        <rect key="frame" x="190" y="272" width="120" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="GRO-Ch-W9Z"/>
+                                            <constraint firstAttribute="height" constant="26" id="Z42-1k-wxZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pp9-oi-th4">
+                                        <rect key="frame" x="190" y="263" width="120" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="5O0-Ep-fzp"/>
+                                            <constraint firstAttribute="width" constant="120" id="BCY-pb-SyR"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="tryAgainDidTap:" destination="817-7P-HqQ" eventType="touchUpInside" id="Rdk-OO-3gv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pp9-oi-th4" firstAttribute="top" secondItem="tOO-IZ-nAj" secondAttribute="bottom" constant="33" id="4L9-ff-sqd"/>
+                                    <constraint firstItem="tOO-IZ-nAj" firstAttribute="centerX" secondItem="PN3-XA-1P8" secondAttribute="centerX" id="5lN-ey-Aa6"/>
+                                    <constraint firstItem="wOo-LJ-XhV" firstAttribute="top" secondItem="PN3-XA-1P8" secondAttribute="top" constant="50" id="ADK-AE-16R"/>
+                                    <constraint firstAttribute="width" constant="500" id="DoB-ps-iWZ"/>
+                                    <constraint firstItem="gub-bn-Jga" firstAttribute="centerY" secondItem="pp9-oi-th4" secondAttribute="centerY" id="JAb-Vr-VVu"/>
+                                    <constraint firstItem="tOO-IZ-nAj" firstAttribute="leading" secondItem="PN3-XA-1P8" secondAttribute="leading" constant="90" id="Jec-nW-Yvg"/>
+                                    <constraint firstItem="wOo-LJ-XhV" firstAttribute="centerX" secondItem="PN3-XA-1P8" secondAttribute="centerX" id="Mgl-qH-o8h"/>
+                                    <constraint firstAttribute="trailing" secondItem="tOO-IZ-nAj" secondAttribute="trailing" constant="90" id="Tt7-Fu-vro"/>
+                                    <constraint firstAttribute="height" constant="330" id="Y9p-a4-zCf"/>
+                                    <constraint firstItem="gub-bn-Jga" firstAttribute="centerX" secondItem="pp9-oi-th4" secondAttribute="centerX" id="cn7-rd-ZnQ"/>
+                                    <constraint firstItem="tOO-IZ-nAj" firstAttribute="top" secondItem="wOo-LJ-XhV" secondAttribute="bottom" constant="20" id="gpQ-G7-nDG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bKE-bb-hnN" secondAttribute="trailing" constant="20" id="CKh-YE-MBv"/>
+                            <constraint firstItem="er5-E2-BdK" firstAttribute="trailing" secondItem="PN3-XA-1P8" secondAttribute="trailing" id="FOX-dQ-Kh8"/>
+                            <constraint firstItem="pp9-oi-th4" firstAttribute="centerX" secondItem="7ZS-sv-3lO" secondAttribute="centerX" id="HIP-ZV-1lI"/>
+                            <constraint firstItem="er5-E2-BdK" firstAttribute="top" secondItem="PN3-XA-1P8" secondAttribute="top" id="Hqu-WR-n0u"/>
+                            <constraint firstItem="er5-E2-BdK" firstAttribute="bottom" secondItem="PN3-XA-1P8" secondAttribute="bottom" id="MlZ-ml-mKl"/>
+                            <constraint firstItem="PN3-XA-1P8" firstAttribute="top" secondItem="zcz-Sh-LML" secondAttribute="bottom" constant="160" id="aIk-iD-XXM"/>
+                            <constraint firstItem="bKE-bb-hnN" firstAttribute="top" secondItem="zcz-Sh-LML" secondAttribute="bottom" constant="20" id="fER-sw-UgW"/>
+                            <constraint firstItem="PN3-XA-1P8" firstAttribute="centerX" secondItem="7ZS-sv-3lO" secondAttribute="centerX" id="nz5-hg-Sep"/>
+                            <constraint firstItem="er5-E2-BdK" firstAttribute="leading" secondItem="PN3-XA-1P8" secondAttribute="leading" id="p0o-mX-UE3"/>
+                            <constraint firstItem="gub-bn-Jga" firstAttribute="centerX" secondItem="7ZS-sv-3lO" secondAttribute="centerX" id="ppW-hT-0Tw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wx8-cd-EhT"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="tOO-IZ-nAj" id="iZb-JA-UCN"/>
+                        <outlet property="shadowView" destination="er5-E2-BdK" id="aee-dp-mgZ"/>
+                        <outlet property="somethingWentWrongView" destination="PN3-XA-1P8" id="dM3-bk-Lyp"/>
+                        <outlet property="tryAgainButtonLabel" destination="gub-bn-Jga" id="ar4-YJ-631"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqb-uK-FUG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1515.625" y="-548.4375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CloseIcon" width="37" height="37"/>
+        <image name="SomethingWentWrongImage" width="313" height="313"/>
+    </resources>
+</document>
